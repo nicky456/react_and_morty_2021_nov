@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  overflow-y: scroll; /* Show scrollbars */
+}
+
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid purple; */
+}
+
+header {
+  border-bottom: 1px dashed #ccc;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 15px;
+}
+
+.logo img {
+    width: 600px;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: 0px 0px 15px 5px #8EFB64;
+    border-radius: 25px;
+}
+
+.buttons{
+    display: flex;
+    width: 600px;
+    margin: 25px 0;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+    /* background-color: black; */
+}
+
+.btn{
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 15px 5px #8EFB64;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #22A2BD;
+}
+
+.description {
+  /* border: 1px solid red; */
+  margin: 25px;
+  width: 60vw;
+}
+
+.description p {
+  margin-bottom: 15px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.char-container{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+
+.loading-center {
+  /* border: 1px solid goldenrod; */
+  grid-column: 1 / 3;
+}
+
+.loading-bubble {
+  margin: 25px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.25);
+}
+
+
+.loc-container{
+    /* border: 1px solid purple; */
+    /* text-align: center; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 25px;
+}
+
+.loc-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.loc-card {
+    padding: 15px;
+    border-radius: 15px;
+    margin: 25px;
+    display: flex;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.25);
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    
+    width: 250px; 
+    height: 150px;
+
+    cursor: pointer;
+}
+
+.loc-info{
+    width: 80%;
+}
+
+.loc-details{
+    /* border: 1px solid green; */
+    /* width: 60vw; */
+    margin: 50px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.25);
+}
+
+.loc-innerbox{
+    /* border: 1px solid brown; */
+}
+
+.loc-innerbox h2{
+    /* border: 1px solid fuchsia; */
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.loc-inbox-container{
+    /* border: 1px solid olive; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loc-info {
+  width: 80%;
+}
+
+.loc-details-info {
+  /* border: 1px solid red; */
+  padding: 15px;
+  border-radius: 15px;
+  margin: 25px;
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.25);
+  width: 400px; 
+}
+
+.loc-info p {
+  margin: 5px;
+  letter-spacing: 1px;
+}
+
+.char-card{
+  padding: 15px;
+  border-radius: 15px;
+  margin: 25px;
+  display: flex;
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.25);
+  gap: 15px;
+  
+  width: 500px; 
+  height: 200px;
+
+  cursor: pointer;
+}
+
+.char-card img{
+    height: 100%;
+    width: auto;
+    border-radius: 15px;
+}
+.char-details{
+    border: 1px dashed grey;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.char-card p{
+
+}
+
+
+.paginationBtns {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  list-style-type: none;
+}
+
+.btn-pagi-active a {
+  background-color: #22A2BD;
+}
+
+.btn-pagi a {
+  border: 1px dashed grey;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+
+  cursor: pointer;
+}
+
+.btn-pagi a:hover {
+  color: black;
+  background-color: #8EFB64;
+}
+
+/* ----- SCROLL BAR ----- */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eee; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+  background: #aaa; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888; 
+}
